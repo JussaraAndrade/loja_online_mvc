@@ -1,0 +1,10 @@
+package model;
+
+public class Produto {
+	private int id_produto;
+	private String nome;
+	private String descricao;
+	private int estoque;
+	private double preco;
+
+}

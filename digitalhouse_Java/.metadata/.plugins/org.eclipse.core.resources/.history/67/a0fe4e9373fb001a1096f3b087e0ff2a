@@ -1,0 +1,9 @@
+package view;
+
+public class ClienteView {
+	
+	public void imprimiCliente(String id_cliente) {
+		System.out.println("Id" +id_cliente);
+	}
+
+}

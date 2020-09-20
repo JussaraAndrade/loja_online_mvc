@@ -1,0 +1,12 @@
+package view;
+
+import model.Cliente;
+
+public class ClienteView {
+	
+	public void imprimiCliente(Cliente cliente) {
+		System.out.println("Id: " +cliente.getId());
+		System.out.println("Nome: ");
+	}
+
+}

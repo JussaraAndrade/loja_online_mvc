@@ -1,0 +1,30 @@
+package main;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import controller.ClienteController;
+import model.Cliente;
+import view.ClienteView;
+
+public class Programa {
+
+	SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
+	public static void main(String[] args) {
+		Cliente cliente = new Cliente();
+		ClienteView clienteView = new ClienteView();
+	
+		ClienteController cli = new ClienteController(cliente, clienteView);
+		
+		cli.setClienteId(1);
+		cli.setClienteNome("Isabelle Sousa");
+		cli.setClienteCpf("368.912.069-10");
+		cli.setClienteEmail("isabelle@gmail.com");
+		cli.setClienteDataNascimento("08-02-19687");
+		
+		cli.updateClienteView();
+		
+
+	}
+
+}

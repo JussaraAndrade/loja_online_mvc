@@ -1,0 +1,53 @@
+package controller;
+
+import java.util.Date;
+
+import model.Cliente;
+import view.ClienteView;
+
+public class ClienteController {
+	private Cliente model;
+	private ClienteView view;
+	
+	public ClienteController(Cliente model, ClienteView view) {
+		this.model = model;
+		this.view = view;
+	}
+	
+	public void updateClienteView() {
+		view.imprimiCliente(model.getId(), model.getNome(), model.getCpf(), model.getEmail(), model.getData_nascimento());
+	}
+	
+	public int getId() {
+		return model.getId();
+	}
+	public void setClienteId(int id_cliente) {
+		model.setId(id_cliente);
+	}
+	public String getNome() {
+		return model.getNome();
+	}
+	public void setClienteNome(String nome) {
+		model.setNome(nome);
+	}
+	public String getCpf() {
+		return model.getCpf();
+	}
+	
+	public void setClienteCpf(String cpf) {
+		model.setCpf(cpf);
+	}
+	public String getEmail() {
+		return model.getEmail();
+	}
+	public void setClienteEmail(String email) {
+		model.setEmail(email);
+	}
+	public Date getData_Nascimento() {
+		return model.getData_nascimento();
+	}
+	public void setClienteDataNascimento(Date data_nascimento) {
+		model.setData_nascimento(data_nascimento);
+	}
+	
+}

@@ -1,0 +1,29 @@
+package controller;
+
+import java.util.Date;
+
+import model.Pedido;
+import view.PedidoView;
+
+public class PedidoController {
+	private Pedido model;
+	private PedidoView view;
+	
+	public PedidoController(Pedido model, PedidoView view) {
+		this.model = model;
+		this.view = view;
+	}
+	public void setPedidoId(int id_pedido) {
+		model.setId_pedido(id_pedido);
+	}
+	public void setPedidoDataSolicitacao(Date data_solicitacao) {
+		model.setData_solicitacao(data_solicitacao);
+	}
+	public void setPedidoValorTotal(double valor_total) {
+		model.setValor_total(valor_total);
+	}
+	public void setPedidoStatus(String status) {
+		model.setStatus(status);
+	}
+
+}

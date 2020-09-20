@@ -1,0 +1,21 @@
+package controller;
+
+import model.Telefone;
+import view.TelefoneView;
+
+public class TelefoneController {
+	private Telefone model;
+	private TelefoneView view;
+	
+	public TelefoneController(Telefone model, TelefoneView view) {
+		this.model = model;
+		this.view = view;
+	}
+	public void setTelefoneDDD(String ddd) {
+		model.setDdd(ddd);
+	}
+	public void setTelefoneNumero(String numero) {
+		model.setNumero(numero);
+	}
+	
+}

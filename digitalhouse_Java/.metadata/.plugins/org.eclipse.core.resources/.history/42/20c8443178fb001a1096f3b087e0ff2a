@@ -1,0 +1,15 @@
+package view;
+
+import java.util.Date;
+
+public class PedidoView {
+	public void imprimiPedido(int id_pedido, Date data_solicitacao, double valor_total, String status) {
+		System.out.println("Id: " +id_pedido);
+		System.out.println("Data solicitação: " + data_solicitacao);
+		System.out.println("Bairro: " +bairro);
+		System.out.println("Cidade: " +cidade);
+		System.out.println("Estado: " +estado);
+		System.out.println("CEP: " +cep);
+	}
+
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="controller.ClienteController"/>
+<fullyQualifiedTypeName name="model.Cliente"/>
+<fullyQualifiedTypeName name="view.ClienteView"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="model.Endereco"/>
+<fullyQualifiedTypeName name="view.EnderecoView"/>
+<fullyQualifiedTypeName name="controller.EnderecoController"/>
+<fullyQualifiedTypeName name="model.Telefone"/>
+<fullyQualifiedTypeName name="view.TelefoneView"/>
+<fullyQualifiedTypeName name="controller.TelefoneController"/>
+<fullyQualifiedTypeName name="model.Produto"/>
+<fullyQualifiedTypeName name="view.ProdutoView"/>
+<fullyQualifiedTypeName name="controller.ProdutoController"/>
+<fullyQualifiedTypeName name="model.Pedido"/>
+<fullyQualifiedTypeName name="view.PedidoView"/>
+<fullyQualifiedTypeName name="controller.PedidoController"/>
+</qualifiedTypeNameHistroy>

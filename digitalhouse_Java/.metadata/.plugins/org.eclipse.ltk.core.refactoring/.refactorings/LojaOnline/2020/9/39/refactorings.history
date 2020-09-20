@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;ClienteController.java&apos; to &apos;LojaOnline/src/controller&apos;&#x0D;&#x0A;- Original project: &apos;LojaOnline&apos;&#x0D;&#x0A;- Destination element: &apos;LojaOnline/src/controller&apos;&#x0D;&#x0A;- Original element: &apos;view.ClienteController.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;controller" element1="/src&lt;view{ClienteController.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1600624007672" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,21 @@
+package controller;
+
+import model.Produto;
+import view.ProdutoView;
+
+public class ProdutoController {
+	private Produto model;
+	private ProdutoView view;
+	
+	public ProdutoController(Produto model, ProdutoView view) {
+		this.model = model;
+		this.view = view;
+	}
+	public void setProdutoId(int id_produto) {
+		model.setId_produto(id_produto);
+	}
+	public void setProdutoNome(String nome) {
+		model.setNome(nome);
+	}
+
+}

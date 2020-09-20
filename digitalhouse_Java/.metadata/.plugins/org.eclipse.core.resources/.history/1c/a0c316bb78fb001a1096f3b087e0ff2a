@@ -1,0 +1,13 @@
+package view;
+
+import java.util.Date;
+
+public class TelefoneView {
+	
+	public void imprimiTelefone(String ddd, String numero) {
+		System.out.println("DDD: " +ddd);
+		System.out.println("Data solicitação: " + data_solicitacao);
+
+	}
+
+}

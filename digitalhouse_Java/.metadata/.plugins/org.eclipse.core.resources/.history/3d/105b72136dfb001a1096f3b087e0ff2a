@@ -1,0 +1,18 @@
+package controller;
+
+import model.Pedido;
+import view.PedidoView;
+
+public class PedidoController {
+	private Pedido model;
+	private PedidoView view;
+	
+	public PedidoController(Pedido model, PedidoView view) {
+		this.model = model;
+		this.view = view;
+	}
+	public void setPedidoId(int id_pedido) {
+		model.setId_pedido(id_pedido);
+	}
+
+}

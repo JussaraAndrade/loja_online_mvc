@@ -1,0 +1,11 @@
+package view;
+
+public class PedidoView {
+	public void imprimiPedido(int id_pedido, String data_solicitacao, double valor_total, String status) {
+		System.out.println("Id: " +id_pedido);
+		System.out.println("Data solicitação: " + data_solicitacao);
+		System.out.println("Valor total: " +valor_total);
+		System.out.println("Status: " +status);
+	}
+
+}

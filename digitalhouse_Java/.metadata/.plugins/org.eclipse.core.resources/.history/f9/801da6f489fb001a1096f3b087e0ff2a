@@ -1,0 +1,59 @@
+package main;
+
+import java.text.SimpleDateFormat;
+
+import controller.ClienteController;
+import controller.EnderecoController;
+import controller.ProdutoController;
+import controller.TelefoneController;
+import model.Cliente;
+import model.Endereco;
+import model.Produto;
+import model.Telefone;
+import view.ClienteView;
+import view.EnderecoView;
+import view.ProdutoView;
+import view.TelefoneView;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		Cliente cliente = new Cliente();
+		Endereco endereco = new Endereco();
+		Telefone telefone = new Telefone();
+		Produto produto = new Produto();
+		
+		ClienteView clienteView = new ClienteView();
+		EnderecoView enderecoView = new EnderecoView();
+		TelefoneView telefoneView = new TelefoneView();
+		ProdutoView produtoView = new ProdutoView();
+		
+		ClienteController cli = new ClienteController(cliente, clienteView);
+		EnderecoController end = new EnderecoController(endereco, enderecoView);
+		TelefoneController tel = new TelefoneController(telefone, telefoneView);
+		ProdutoController prod = new ProdutoController(produto, produtoView);
+		
+		cli.setClienteId(1);
+		cli.setClienteNome("Isabelle Sousa");
+		cli.setClienteCpf("368.912.069-10");
+		cli.setClienteEmail("isabelle@gmail.com");
+		cli.setClienteDataNascimento("08-02-19687");
+		end.setEnderecoRua("Rua Herculano Metello Peres");
+		end.setEnderecoNumero("1002");
+		end.setEnderecoBairro("Conj. Residencial Mata do Jacinto");
+		end.setEnderecoCidade("Campo Grande");
+		end.setEnderecoEstado("MS");
+		end.setEnderecoCep("79033-410");
+		tel.setTelefoneDDD("11");
+		tel.setTelefoneNumero("5236-6587");
+		
+		cli.updateClienteView();
+		end.updateEnderecoView();
+		tel.updateTelefoneView();
+		
+		
+		
+
+	}
+
+}

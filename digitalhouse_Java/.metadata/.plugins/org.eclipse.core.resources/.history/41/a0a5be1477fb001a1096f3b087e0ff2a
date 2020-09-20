@@ -1,0 +1,13 @@
+package view;
+
+import controller.ClienteController;
+import model.Cliente;
+
+public class ClienteView {
+	
+	public void imprimiCliente(int id, String nome) {
+		System.out.println("Id: " +id);
+		System.out.println("Nome: " + nome);
+	}
+
+}

@@ -1,0 +1,13 @@
+package view;
+
+import java.util.Date;
+
+public class ProdutoView {
+	public void imprimiProduto(int id_pedido, Date data_solicitacao, double valor_total, String status) {
+		System.out.println("Id: " +id_pedido);
+		System.out.println("Data solicitação: " + data_solicitacao);
+		System.out.println("Valor total: " +valor_total);
+		System.out.println("Status: " +status);
+	}
+
+}

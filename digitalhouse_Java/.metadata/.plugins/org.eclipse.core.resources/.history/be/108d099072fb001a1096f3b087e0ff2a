@@ -1,0 +1,6 @@
+package controller;
+
+public class TelefoneController {
+	private Telefone model;
+	private TelefoneView view;
+}

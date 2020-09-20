@@ -1,0 +1,46 @@
+package main;
+
+import java.text.SimpleDateFormat;
+
+import controller.ClienteController;
+import controller.EnderecoController;
+import model.Cliente;
+import model.Endereco;
+import view.ClienteView;
+import view.EnderecoView;
+
+public class Programa {
+
+	SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
+	public static void main(String[] args) {
+		Cliente cliente = new Cliente();
+		Endereco endereco = new Endereco();
+		Telefone telefone = new Telefone();
+		
+		ClienteView clienteView = new ClienteView();
+		EnderecoView enderecoView = new EnderecoView();
+		
+		ClienteController cli = new ClienteController(cliente, clienteView);
+		EnderecoController end = new EnderecoController(endereco, enderecoView);
+		
+		cli.setClienteId(1);
+		cli.setClienteNome("Isabelle Sousa");
+		cli.setClienteCpf("368.912.069-10");
+		cli.setClienteEmail("isabelle@gmail.com");
+		cli.setClienteDataNascimento("08-02-19687");
+		end.setEnderecoRua("Rua Herculano Metello Peres");
+		end.setEnderecoNumero("1002");
+		end.setEnderecoBairro("Conj. Residencial Mata do Jacinto");
+		end.setEnderecoCidade("Campo Grande");
+		end.setEnderecoEstado("MS");
+		end.setEnderecoCep("79033-410");
+		
+		cli.updateClienteView();
+		end.updateEnderecoView();
+		
+		
+		
+
+	}
+
+}
